@@ -1,13 +1,13 @@
-import './App.css';
+import '../App.css';
 
-const App = () => {
+const Shopping = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello World Function</h1>
+        <h1>Shopping</h1>
       </header>
     </div>
   );
 };
 
-export default App;
+export default Shopping;
