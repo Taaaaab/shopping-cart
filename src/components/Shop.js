@@ -1,6 +1,6 @@
-import './App.css';
+import '../App.css';
 
-const App = () => {
+const Shop = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -11,9 +11,9 @@ const App = () => {
           </ul> 
         </nav>
       </header>
-      <h3>Welcome</h3>
+      <h3>Shopping-cart</h3>
     </div>
   );
 };
 
-export default App;
+export default Shop;
