@@ -22,7 +22,8 @@ const Shop = () => {
   };
 
   const handleItem1Submit = (e) => {
-    setItem1(item1 = e.target.value);
+    const inputToNum = parseInt(e.target.value);
+    setItem1(item1 = inputToNum);
   };
 
   const item2Increment = (e) => {
@@ -36,7 +37,8 @@ const Shop = () => {
   };
 
   const handleItem2Submit = (e) => {
-    setItem2(item2 = e.target.value);
+    const inputToNum = parseInt(e.target.value);
+    setItem2(item2 = inputToNum);
   };
 
   const item3Increment = (e) => {
@@ -50,7 +52,8 @@ const Shop = () => {
   };
 
   const handleItem3Submit = (e) => {
-    setItem3(item3 = e.target.value);
+    const inputToNum = parseInt(e.target.value);
+    setItem3(item3 = inputToNum);
   };
 
   const handleItem1FormSubmit = (e) => {
@@ -81,7 +84,7 @@ const Shop = () => {
             <li><a href='/shop'>Shop</a></li>
             <li>Checkout</li>  
             <img src={sc} className="shoppingSvg" alt="shopping cart" />
-            <div data-testid="custom-element">{cart}</div>
+            <div data-testid="custom-element" className='cart'>{cart}</div>
           </ul> 
         </nav>
       </header>

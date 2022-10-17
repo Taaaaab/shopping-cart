@@ -56,3 +56,9 @@ a {
   margin: 1rem;
   width: 100px;
 }
+
+.cart {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: -5rem;
+}

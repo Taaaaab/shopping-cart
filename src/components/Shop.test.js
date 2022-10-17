@@ -43,4 +43,25 @@ describe("Item Input", () => {
     expect(cart).toBeInTheDocument();
   });
 
+  it("displays the value of empty shopping cart correctly", () => {
+    const onChangeMock = jest.fn();
+    render(<Shop onChange={onChangeMock} />);
+
+    const cart = screen.getByTestId('custom-element');
+    expect(cart.innerHTML).toEqual("0");
+  });
+
+  it("displays the value of item added to shopping cart correctly", () => {
+    const onChangeMock = jest.fn();
+    render(<Shop onChange={onChangeMock} />);
+    const input = screen.getByRole('spinbutton', {name: 'Quantity:'});
+    const submitButtons = screen.getAllByText(/add to cart/i);
+    const submitButton = submitButtons[0];
+    const cart = screen.getByTestId('custom-element');
+
+    userEvent.type(input, "12");
+    userEvent.click(submitButton);
+    
+    expect(cart.innerHTML).toEqual("12");
+  });
 });
