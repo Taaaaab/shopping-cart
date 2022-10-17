@@ -11,7 +11,8 @@ const App = () => {
           </ul> 
         </nav>
       </header>
-      <h3>Welcome</h3>
+      <h2>Welcome to our website</h2>
+      <p>Free shipping for orders over $50!</p>
     </div>
   );
 };

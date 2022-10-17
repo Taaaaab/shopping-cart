@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -22,4 +28,31 @@ nav {
 a {
   font-size: 1.2rem;
   color: white;
+}
+
+.card-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.candySvg {
+  height: 40vmin;
+  width: 250px;
+  pointer-events: none;
+}
+
+.cart-button {
+  font-size: 1rem;
+  margin: 1rem;
+  width: 100px;
 }
