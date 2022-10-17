@@ -81,7 +81,7 @@ const Shop = () => {
             <li><a href='/shop'>Shop</a></li>
             <li>Checkout</li>  
             <img src={sc} className="shoppingSvg" alt="shopping cart" />
-            <div>{cart}</div>
+            <div data-testid="custom-element">{cart}</div>
           </ul> 
         </nav>
       </header>
