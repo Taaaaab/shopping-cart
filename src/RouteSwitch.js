@@ -4,12 +4,12 @@ import Shop from "./components/Shop";
 
 const RouteSwitch = () => {
     return (
-        <BrowserRouter basename="/">
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="/shop" element={<Shop />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 };
 
