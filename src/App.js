@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './App.css';
 
 const App = () => {
@@ -6,8 +7,8 @@ const App = () => {
       <header className="App-header">
         <nav>
           <ul className='nav-links'>
-            <li><a href='/'>Home</a></li>  
-            <li><a href='/shop'>Shop</a></li>  
+            <li><Link to="/">Home</Link></li>  
+            <li><Link to="/shop">Shop</Link></li>  
           </ul> 
         </nav>
       </header>

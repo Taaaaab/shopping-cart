@@ -4,6 +4,7 @@ import sc from './shopping-cart.svg';
 import mm from './mm.webp';
 import rp from './rp.jpeg';
 import hk from './hk.webp';
+import { Link } from 'react-router-dom';
 
 const Shop = () => {
   let [item1, setItem1] = useState(0);
@@ -80,8 +81,8 @@ const Shop = () => {
       <header className="App-header">
         <nav>
           <ul className='nav-links'>
-            <li><a href='/'>Home</a></li>  
-            <li><a href='/shop'>Shop</a></li>
+            <li><Link to="/">Home</Link></li>  
+            <li><Link to="/shop">Shop</Link></li>
             <li>Checkout</li>  
             <img src={sc} className="shoppingSvg" alt="shopping cart" />
             <div data-testid="custom-element" className='cart'>{cart}</div>
