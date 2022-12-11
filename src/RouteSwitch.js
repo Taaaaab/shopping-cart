@@ -5,7 +5,7 @@ import Shop from "./components/Shop";
 
 const RouteSwitch = () => {
     return (
-        <HashRouter basename='/shopping-cart'>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="/shop" element={<Shop />} />
