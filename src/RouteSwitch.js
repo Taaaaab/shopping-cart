@@ -1,15 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import App from "./App";
 import Shop from "./components/Shop";
 
 const RouteSwitch = () => {
     return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="/shop" element={<Shop />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 };
 
