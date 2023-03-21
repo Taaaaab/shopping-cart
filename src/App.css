@@ -1,64 +1,42 @@
-.App {
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
 }
 
-body {
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 10vh;
-  background-color: #282c34;
-  color: white;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.nav-links {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-}
-
-a {
-  font-size: 1.2rem;
-  color: white;
-}
-
-.card-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-  padding-top: 1rem;
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  font-size: 1.2rem;
+  padding: 2em;
 }
 
-.candySvg {
-  height: 40vmin;
-  width: 250px;
-  pointer-events: none;
-}
-
-.cart-button {
-  font-size: 1rem;
-  margin: 1rem;
-  width: 100px;
-}
-
-.cart {
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-left: -5rem;
+.read-the-docs {
+  color: #888;
 }
