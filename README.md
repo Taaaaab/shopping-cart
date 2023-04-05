@@ -4,7 +4,7 @@ This project was completed for The Odin Project Shopping Cart Assignment. The go
 
 Practice using React useState and React Router for multi-page site with updating shopping cart of items. Refactored to use TypeScript.
 
-![Alt text](https://github.com/Taaaaab/personal-portfolio/blob/main/photos/blog.png?raw=true "Screenshot")
+![Alt text](https://github.com/Taaaaab/personal-portfolio/blob/main/src/assets/blog.png?raw=true "Screenshot")
 
 ## Built With
 
